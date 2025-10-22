@@ -3,9 +3,9 @@
   --bg: #0b0b0d; /* very dark background */
   --fg: #e9e6e1; /* light text */
   /* Halloween orange accents */
-  --accent: rgb(234, 51, 67); /* primary orange */
-  --accent-2: rgb(234, 51, 67); /* lighter orange for gradients */
-  --accent-dark: rgb(133, 29, 38); /* darker orange for hover states */
+  --accent: #660000; /* primary red */
+  --accent-2: #FF0000; /* lighter red for gradients */
+  --accent-dark: #660000; /* darker red for hover states */
   --card-bg: rgba(15, 15, 15, 0.75);
   --card-border: rgba(255, 255, 255, 0.03);
   --header-text: #fff;
