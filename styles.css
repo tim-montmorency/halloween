@@ -1,0 +1,303 @@
+:root {
+  /* Force dark mode colors */
+  --bg: #0b0b0d; /* very dark background */
+  --fg: #e9e6e1; /* light text */
+  /* Halloween orange accents */
+  --accent: #ff6a00; /* primary orange */
+  --accent-2: #ff8c1a; /* lighter orange for gradients */
+  --accent-dark: #cc4f00; /* darker orange for hover states */
+  --card-bg: rgba(15, 15, 15, 0.75);
+  --card-border: rgba(255, 255, 255, 0.03);
+  --header-text: #fff;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Sizes and spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}
+
+/* Remove color-scheme switching: site uses dark palette only */
+
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  transition: background var(--transition-medium), color var(--transition-medium);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border-bottom: 1px solid transparent;
+}
+
+a:hover, a:focus {
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--accent-dark);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: var(--header-text);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+header a {
+  color: white;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+
+header a:hover, header a:focus {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/* Language toggle */
+.lang-toggle {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--space-xs);
+  opacity: 0.8;
+  transition: all var(--transition-fast);
+}
+
+.lang-toggle button.active,
+.lang-toggle button:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+/* Main content */
+main {
+  max-width: 960px;
+  margin: var(--space-lg) auto;
+  padding: 0 var(--space-md);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin-bottom: var(--space-md);
+  padding: var(--space-lg) 0 var(--space-md);
+}
+
+.hero h2 {
+  margin: var(--space-xs) 0 0;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: var(--space-md);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  opacity: 0.9;
+}
+
+/* Hero Image */
+.hero-image-container {
+  width: 100%;
+  margin: 0 auto var(--space-xl);
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  aspect-ratio: 2140/800;
+  max-height: 70vh;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  border: none;
+  transition: transform var(--transition-medium);
+}
+
+/* For img elements */
+.hero-image[src] {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* For iframe elements (audio player) */
+.hero-image[src][frameborder] {
+  display: block;
+  background: transparent;
+  overflow: hidden;
+  border: none;
+}
+
+/* Ensure no scrollbars appear in the embedded content */
+.hero-image-container iframe,
+.hero-image-container embed {
+  overflow: hidden;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbars for webkit browsers */
+.hero-image-container iframe::-webkit-scrollbar,
+.hero-image-container embed::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-image-container:hover .hero-image {
+  transform: scale(1.02);
+}
+
+/* Details grid */
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.detail-box {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: var(--space-md) var(--space-lg);
+  backdrop-filter: blur(10px);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.detail-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detail-box span {
+  display: block;
+  font-size: 0.875rem;
+  opacity: 0.7;
+  margin-bottom: var(--space-xs);
+}
+
+.detail-box strong {
+  font-size: 1.125rem;
+  display: block;
+}
+
+.detail-box a {
+  display: inline-block;
+}
+
+/* Description section */
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-radius: 3px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.875rem;
+  margin: var(--space-xl) 0 var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--card-border);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: var(--space-md);
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+  
+  .details {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero {
+    padding: var(--space-md) 0;
+  }
+  
+  .hero-image-container {
+    border-radius: 8px;
+    margin-bottom: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 15px;
+  }
+  
+  header h1 {
+    font-size: 1.1rem;
+  }
+  
+  .lang-toggle button {
+    padding: var(--space-xs) var(--space-sm);
+  }
+}

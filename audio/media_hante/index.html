@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Synced Audio Player</title>
+
+  <!-- Page-level styles -->
+</head>
+<body>
+  <div class="wrapper">
+    <synced-audio
+      src="./archipels_hls/audio.m3u8"
+      srcmp3="./archipels.mp3"
+      cover="./cover.jpg"
+      player-play-img="./player-play.jpg"
+      player-pause-img="./player-pause.jpg"
+      artist="Tim Montmorency"
+      album="Projection Architecturale"
+      duration="1800"
+      debug="0">
+  </div>
+
+  
+  <!-- Import the SyncedAudio module -->
+  <script type="module" src="../../utc-audio-player/synced-audio.js"></script>
+</body>
+</html>

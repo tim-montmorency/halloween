@@ -1,0 +1,3 @@
+[submodule "utc-audio-player"]
+	path = utc-audio-player
+	url = https://gitlab.com/sr-expo/netart/utc-audio-player
