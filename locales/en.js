@@ -13,7 +13,7 @@ export const en = {
     "<strong>Média Hanté</strong> — Halloween Architectural Projection at Place Bell. Students from the Multimedia Integration Techniques program at Collège Montmorency present a haunted architectural projection blending pre-1975 horror films, 2D animation, datamosh, and digital glitches. Faces distort, duplicate, and dissolve into visual and sonic chaos as an entity appears to seize control of the image. The projection explores transformation, fear, and the loss of identity through layered moving images and a shifting soundtrack.",
     "Created by students of Collège Montmorency."
   ],
-  "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>More information about the program</a>",
+  "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>More information about the TIM program</a>",
   "section-credits-title": "Credits",
   "credits-collaborators": "Teachers collaborators: Guillaume Arseneault and Thomas Ouellet Fredericks",
   "credits-projection": "Projection mapping: Init & XPAV",
