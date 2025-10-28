@@ -14,7 +14,7 @@ export const fr = {
     "La projection explore la transformation, la peur et la perte d’identité. Des visages se déforment, se dupliquent et se dissolvent dans un chaos visuel et sonore où une entité semble prendre le contrôle de l’image.",
     "Créé par les étudiants du Collège Montmorency."
   ],
-  "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>Pour plus d’information sur le projet et l’artiste</a>",
+  "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>Pour plus d’information sur le programme TIM</a>",
   "section-credits-title": "Crédits",
   "credits-collaborators": "Professeurs collaborateurs: Guillaume Arseneault et Thomas Ouellet Fredericks",
   "credits-projection": "Projection mapping: Init & XPAV",
