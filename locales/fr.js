@@ -1,7 +1,7 @@
 export const fr = {
-  "title": "Média Hanté",
+  "title": "Média hanté",
   "author": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>TIM Montmorency</a>",
-  "subtitle": "Média Hanté",
+  "subtitle": "Média hanté",
   "tagline": "Projection architecturale d’Halloween à la Place Bell. <br> Faites l’écoute de la trame visuelle et sonore de la projection",
   "label-author": "Artiste",
   "label-when": "Quand",
