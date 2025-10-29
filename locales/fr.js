@@ -16,11 +16,12 @@ export const fr = {
   ],
   "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>Pour plus d’information sur le programme TIM</a>",
   "section-credits-title": "Crédits",
-  "credits-collaborators": "Professeurs collaborateurs: Guillaume Arseneault et Thomas Ouellet Fredericks",
+  "credits-artists": "Student artists: Émeryk Bélisle, Ahmed K, Ting Yung Terry Lu, Rafael Angon Dube, Ryan Dufault, Elie Daher, Kristy Moussally, Marie-Lili Laprise, Yannick Chamberland, Mégane Ranger, Benjamin Ferland, Dana Saavedra-Torrano, Matis Ghariani, Mikael Atseneau, Amira Tounekti, Mathieu Willett, Justin Montpetit, Kordan Radhouane, prénom nom, Alexandre Gendron, Jade Hébert",
+  "credits-collaborators": "Professeurs: Guillaume Arseneault et Thomas Ouellet Fredericks",
   "credits-projection": "Projection mapping: Init & XPAV",
   "label-partenaires": "Partenaires",
   "partenaires": [
     "<a href='https://co-motion.ca/' target='_blank' rel='noopener noreferrer'>Co-Motion</a>",
   ],
-  "footer": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>© 2025 TIM Montmorency</a>"
+  "footer": "© 2025"
 };
