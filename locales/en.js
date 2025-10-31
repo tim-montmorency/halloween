@@ -15,7 +15,7 @@ export const en = {
   ],
   "more-info": "<a href='https://tim-montmorency.com/' target='_blank' rel='noopener noreferrer'>More information on the TIM program</a>",
   "section-credits-title": "Credits",
-    "credits-artists": "Student artists: Émeryk Bélisle, Ahmed K, Ting Yung Terry Lu, Rafael Angon Dube, Ryan Dufault, Elie Daher, Kristy Moussally, Marie-Lili Laprise, Yannick Chamberland, Mégane Ranger, Benjamin Ferland, Dana Saavedra-Torrano, Matis Ghariani, Mikael Atseneau, Amira Tounekti, Mathieu Willett, Justin Montpetit, Kordan Radhouane, Thearylou Lach, Alexandre Gendron, Jade Hébert",
+    "credits-artists": "Student artists: Émeryk Bélisle, Ahmed K, Ting Yung Terry Lu, Rafael Angon Dube, Ryan Dufault, Elie Daher, Kristy Moussally, Marie-Lili Laprise, Yannick Chamberland, Mégane Ranger, Benjamin Ferland, Dana Saavedra-Torrano, Matis Ghariani, Mikaël Arseneau, Amira Tounekti, Mathieu Willett, Justin Montpetit, Kordan Radhouane, Thearylou Lach, Alexandre Gendron, Jade Hébert",
   "credits-collaborators": "Teachers: Guillaume Arseneault and Thomas Ouellet Fredericks",
   "credits-projection": "Projection mapping: Init & XPAV",
   "label-partenaires": "Partners",
